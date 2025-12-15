@@ -10,6 +10,20 @@ To create an executable, you will need two files from the **libHGT** library: (1
 Like the **libHGT** library, the source code is intended for use with the **gcc** compiler.  Although only tested on 
 64-bit Windows 11, the source code should be portable to other 64-bit operating systems supported by **gcc**.
 
+## Building the Executable
+
+For Windows 11 users, an executable is included with any release posted on GitHub.
+
+For other operating systems, you will need to build the executable, as follows.
+
+*  You need the [**gcc**][gcc-gnu-link] C compiler installed on your system.  That installation must include the **libmpfr.a** and **libgmp.a** (floating point) static libraries.
+
+*  From [**libHGT**][libhgt-link], you need to: (1) create the **libhgt.a** static library file, and (2) make that library file plus **hgt.h** visible to the **gcc** compiler.
+
+*  Following the build logic in the **makegram.bat** file, you need to create the necessary 'makefile', in the form that applies to your operating system and the **gcc** compiler.
+
+You can then build the Gram executable from the provided source files.
+
 ## Files
 
 This distribution consists of the following files:
