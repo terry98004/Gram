@@ -1,5 +1,5 @@
 # Gram
-Using the libHGT static library, locates Gram Points
+Using our libHGT static library, locates Gram Points
 
 ## Overview
 
@@ -61,7 +61,7 @@ This distribution consists of the following files:
 ## Terms of use
 
 This **Gram Point Calculator** is free and distributed under the
-[**MIT License**][license-link] (MIT). 
+**MIT License** (MIT). 
 
 We used the [**gcc**][gcc-gnu-link] compiler and the [**MPFR**][mpfr-link] floating point library.
 We also used the [**msys2**][msys2-link] software distribution and building platform for windows.
