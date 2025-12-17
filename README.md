@@ -1,5 +1,5 @@
 # Gram
-Using our libHGT static library, locates Gram Points
+Using our **libHGT** static library, locates Gram Points
 
 ## Overview
 
