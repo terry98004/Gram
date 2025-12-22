@@ -5,10 +5,7 @@ Using our **libHGT** static library, locates Gram Points
 
 We provide here a C program to either: (1) locate Gram Points given a positive integer N, or (2) calculate the associated N for the largest Gram Point less than or equal to a given ordinate 't'. The actual calculation work is done by calls to functions in the **libHGT** static library.  The code here is a front end to that calculating code that: (1) gathers the user-requested parameters for the calculations via the command line, (2) validates those command line parameters (by calls to the library), (3) passes those parameters to the calculating code in the library, and (4) prints (via stdout) a report of those calculations.
 
-To create an executable, you will need two files from the **libHGT** library: (1) the **hgt.h** include file, and (2) the **libhgt.a** static library file.
-
-Like the **libHGT** library, the source code is intended for use with the **gcc** compiler.  Although only tested on 
-64-bit Windows 11, the source code should be portable to other 64-bit operating systems supported by **gcc**.
+For a description of the functions available and algorithms used in **libHGT**, see [libHGT.pdf][libHGT-pdf-link].
 
 ## Building the Executable
 
@@ -77,3 +74,4 @@ See their respective links for theirs terms of license.
 [gcc-gnu-link]:			https://gcc.gnu.org/
 [msys2-link]:			https://www.msys2.org/
 [libhgt-link]:			https://github.com/terry98004/libHGT/
+[libHGT-pdf-link]:		https://github.com/terry98004/libHGT/blob/master/libHGT.pdf
