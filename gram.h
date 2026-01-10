@@ -1,6 +1,6 @@
 // -------------------------------------------------------------------
-// Program last modified December 7, 2025. 
-// Copyright (c) 2025 Terrence P. Murphy
+// Program last modified January 10, 2026. 
+// Copyright (c) 2025-2026 Terrence P. Murphy
 // MIT License -- see gram.c for details.
 // -------------------------------------------------------------------
 
