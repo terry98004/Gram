@@ -71,7 +71,7 @@ See their respective links for theirs terms of license.
 [gram-c-link]:			https://github.com/terry98004/Gram/blob/master/gram.c
 [CompGram-c-link]:		https://github.com/terry98004/Gram/blob/master/CompGram.c
 [gram-h-link]:			https://github.com/terry98004/Gram/blob/master/gram.h
-[makefile-link]:	https://github.com/terry98004/GramZ/blob/master/makefile
+[makefile-link]:	https://github.com/terry98004/Gram/blob/master/makefile
 [makegram-bat-link]:	https://github.com/terry98004/Gram/blob/master/makegram.bat
 [mpfr-link]:			https://www.mpfr.org/
 [gcc-gnu-link]:			https://gcc.gnu.org/
