@@ -17,7 +17,7 @@ For other operating systems, you will need to build the executable, as follows.
 
 *  From [**libHGT**][libhgt-link], you need to: (1) create the **libhgt.a** static library file, and (2) make that library file plus **hgt.h** visible to the **gcc** compiler.
 
-*  Following the build logic in the **makegram.bat** file, you need to create the necessary 'makefile', in the form that applies to your operating system and the **gcc** compiler.
+*  Following the build logic in the **makegram.bat** file, we provide a **makefile**, in the form that should work with your operating system and the **gcc** compiler.
 
 You can then build the Gram executable from the provided source files.
 
@@ -33,7 +33,9 @@ This distribution consists of the following files:
  
   * [CompGram.c][CompGram-c-link]. This source code file includes the 'ComputeGramPoints' and 'ComputeGramNearT'  functions, which: (1) call the **libHGT** functions that do the actual calculations, and (2) print the output reports.
   
-  * [gram.h][gram-h-link]. The is the only (local) include file for the program.  
+  * [gram.h][gram-h-link]. The is the only (local) include file for the program.
+  
+  * [makefile][makefile-link]. This makefile is for use with the make program that is available with most development environments.
   
   * [makegram.bat][makegram-bat-link]. The is the "makefile" for the program.  Currently,
   this file is a Windows batch file (**not** an actual makefile), but can be easily converted to 
@@ -69,6 +71,7 @@ See their respective links for theirs terms of license.
 [gram-c-link]:			https://github.com/terry98004/Gram/blob/master/gram.c
 [CompGram-c-link]:		https://github.com/terry98004/Gram/blob/master/CompGram.c
 [gram-h-link]:			https://github.com/terry98004/Gram/blob/master/gram.h
+[makefile-link]:	https://github.com/terry98004/Gram/blob/master/makefile
 [makegram-bat-link]:	https://github.com/terry98004/Gram/blob/master/makegram.bat
 [mpfr-link]:			https://www.mpfr.org/
 [gcc-gnu-link]:			https://gcc.gnu.org/
