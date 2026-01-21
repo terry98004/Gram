@@ -174,10 +174,11 @@ if(gram.nResult == 0 && gram.tResult == 0){
 // and printf our HardyZ results.  Time the seconds it takes to do the
 // computations if the user enters the -s command line parameter.
 // -------------------------------------------------------------------
-clock_t	t;
-double 	time_taken;
+struct timespec start, end;
+double 			time_taken;
 
-t = clock(); 
+clock_gettime(CLOCK_MONOTONIC, &start);
+
 InitMPFR(gram.DefaultBits, gram.Threads, gram.DebugFlags, false);
 if(gram.nResult == 1)
 	{
@@ -188,8 +189,10 @@ else
 	ComputeGramNearT(gram);
 	}
 CloseMPFR();
-t = clock() - t; 
-time_taken = ((double)t)/CLOCKS_PER_SEC; // in seconds 
+
+clock_gettime(CLOCK_MONOTONIC, &end);
+time_taken =  (end.tv_sec - start.tv_sec);
+time_taken += (end.tv_nsec - start.tv_nsec) / 1000000000.0;
 if(gram.bSeconds){
 	printf("Compute took %f seconds to execute \n", time_taken); 
 	}
